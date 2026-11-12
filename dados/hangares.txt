@@ -1,0 +1,2 @@
+1;Setor Norte;1
+2;Setor Sul;0

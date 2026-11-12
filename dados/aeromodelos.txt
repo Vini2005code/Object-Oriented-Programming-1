@@ -1,0 +1,3 @@
+AVIAO;1;Boeing;737;PRA1234;180;1
+HELICOPTERO;2;Airbus;H125;6;Azul
+JATO;3;Embraer;Phenom 300;Branco;850
