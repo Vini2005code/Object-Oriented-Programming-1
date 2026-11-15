@@ -2,6 +2,9 @@ package br.com.skycode.sga;
 
 import java.util.Scanner;
 
+//Função: É o ponto de entrada do sistema (main). Exibe os menus em loop interativo (CRUDs), 
+// lê os comandos digitados pelo utilizador no terminal e direciona as chamadas para a classe controladora.
+
 public class Principal {
     private static Aeroporto aeroporto = new Aeroporto();
     private static Scanner scanner = new Scanner(System.in);
@@ -54,9 +57,8 @@ public class Principal {
         }
     }
 
-    // ==========================================
     // SUBMENUS (Requisito RF10)
-    // ==========================================
+    
     private static void menuCompanhias() {
         int op = 0;
         while (op != 6) {

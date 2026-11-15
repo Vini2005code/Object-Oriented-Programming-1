@@ -15,9 +15,8 @@ public class Aeroporto {
     public void carregarDadosIniciais() { ArmazenamentoTxt.carregar(this); }
     public void salvarState() { ArmazenamentoTxt.salvar(this); }
 
-    // ==========================================
     // CRUD - COMPANHIAS
-    // ==========================================
+    
     public void cadastrarCompanhia(String nome, String cnpj) {
         // Motivo: Geração dinâmica de ID baseada no maior ID existente para evitar conflitos após remoções.
         int novoId = companhias.stream().mapToInt(Companhia::getId).max().orElse(0) + 1;
@@ -53,9 +52,8 @@ public class Aeroporto {
         salvarState();
     }
 
-    // ==========================================
     // CRUD - PISTAS
-    // ==========================================
+
     public void cadastrarPista(String numero) {
         int novoId = pistas.stream().mapToInt(Pista::getId).max().orElse(0) + 1;
         pistas.add(new Pista(novoId, numero));
@@ -88,9 +86,8 @@ public class Aeroporto {
         salvarState();
     }
 
-    // ==========================================
     // OPERAÇÕES DE HANGARES E AEROMODELOS
-    // ==========================================
+    
     public void listarHangares() {
         if (hangares.isEmpty()) System.out.println("Nenhum hangar cadastrado.");
         for (Hangar h : hangares) h.imprimir();
