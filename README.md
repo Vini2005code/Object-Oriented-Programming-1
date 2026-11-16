@@ -1,6 +1,6 @@
 # SGA Jatinho Feliz - Sistema de Gerenciamento Aeroportuário
 
-O **SGA Jatinho Feliz** é um sistema de software desenvolvido sob medida para a gestão da infraestrutura e operações do aeroporto regional Jatinho Feliz. Construído de raiz em Java, o sistema centraliza o controlo de aeromodelos (aviões, helicópteros e jatos), companhias, pistas, hangares e voos, eliminando inconsistências operacionais e garantindo rastreabilidade para auditorias.
+O **SGA Jatinho Feliz** é um sistema de software desenvolvido por Vinícius Rios, Arthur Nardy e Guilherme Rodrigues. É um sistema sob medida para a gestão da infraestrutura e operações do aeroporto regional Jatinho Feliz. Construído de raiz em Java, o sistema centraliza o controlo de aeromodelos (aviões, helicópteros e jatos), companhias, pistas, hangares e voos, eliminando inconsistências operacionais e garantindo rastreabilidade para auditorias.
 
 # Funcionalidades Principais
 *   **Gestão de Frota:** Cadastro e listagem categorizada de Aviões, Helicópteros e Jatos.
