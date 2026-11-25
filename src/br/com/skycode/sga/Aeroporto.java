@@ -21,9 +21,7 @@ public class Aeroporto {
         ArmazenamentoTxt.salvar(this);
     }
 
-    // ==========================================
     // CRUD - COMPANHIAS
-    // ==========================================
     public void cadastrarCompanhia(String nome, String cnpj) {
         int novoId = companhias.stream().mapToInt(Companhia::getId).max().orElse(0) + 1;
         companhias.add(new Companhia(novoId, nome, cnpj));
@@ -66,9 +64,7 @@ public class Aeroporto {
         salvarState();
     }
 
-    // ==========================================
     // CRUD - PISTAS
-    // ==========================================
     public void cadastrarPista(String numero) {
         int novoId = pistas.stream().mapToInt(Pista::getId).max().orElse(0) + 1;
         pistas.add(new Pista(novoId, numero));
@@ -109,9 +105,8 @@ public class Aeroporto {
         salvarState();
     }
 
-    // ==========================================
     // AEROMODELOS, HANGARES E VOOS
-    // ==========================================
+    
     public void listarAeromodelos() {
         if (aeromodelos.isEmpty()) {
             System.out.println("Nenhum aeromodelo cadastrado.");
